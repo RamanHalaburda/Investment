@@ -1,0 +1,11 @@
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Release\netcoreapp2.0\Investments.deps.json
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Release\netcoreapp2.0\Investments.runtimeconfig.json
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Release\netcoreapp2.0\Investments.runtimeconfig.dev.json
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Release\netcoreapp2.0\Investments.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Release\netcoreapp2.0\Investments.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.csproj.CoreCompileInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.AssemblyInfoInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.AssemblyInfo.cs
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Release\netcoreapp2.0\Investments.pdb
