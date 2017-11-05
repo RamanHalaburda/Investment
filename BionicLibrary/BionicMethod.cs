@@ -2,7 +2,7 @@
 
 namespace BionicLibrary
 {
-    public class Class1
+    public class BionicMethod
     {
     }
 }

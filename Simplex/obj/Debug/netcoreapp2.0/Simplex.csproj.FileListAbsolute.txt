@@ -1,0 +1,9 @@
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\bin\Debug\netcoreapp2.0\Simplex.deps.json
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\bin\Debug\netcoreapp2.0\Simplex.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\bin\Debug\netcoreapp2.0\Simplex.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.csproj.CoreCompileInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.AssemblyInfoInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.AssemblyInfo.cs
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Simplex\obj\Debug\netcoreapp2.0\Simplex.pdb

@@ -9,3 +9,5 @@ E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Debug\netcoreapp2.0\Investments.AssemblyInfo.cs
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Debug\netcoreapp2.0\Investments.dll
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\obj\Debug\netcoreapp2.0\Investments.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Debug\netcoreapp2.0\BionicLibrary.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\Investments\bin\Debug\netcoreapp2.0\BionicLibrary.pdb
