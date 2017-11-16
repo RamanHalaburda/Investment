@@ -5,3 +5,10 @@ E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsW
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWCF\obj\Debug\InvestmentsWCF.dll
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWCF\obj\Debug\InvestmentsWCF.pdb
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWCF\obj\Debug\InvestmentsWCF.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\bin\InvestmentsWCF.dll.config
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\bin\InvestmentsWCF.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\bin\InvestmentsWCF.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\obj\Debug\InvestmentsWCF.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\obj\Debug\InvestmentsWCF.csproj.CoreCompileInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\obj\Debug\InvestmentsWCF.dll
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWCF\obj\Debug\InvestmentsWCF.pdb
