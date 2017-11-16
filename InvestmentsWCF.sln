@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentsWCF", "InvestmentsWCF\InvestmentsWCF.csproj", "{B68DEE72-E27E-4A63-B41F-825C35E6886F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentsWinWorms", "InvestmentsWinWorms\InvestmentsWinWorms.csproj", "{B22083F9-3018-4E30-8A1D-A4F9E7240AEB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B68DEE72-E27E-4A63-B41F-825C35E6886F} = {B68DEE72-E27E-4A63-B41F-825C35E6886F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68DEE72-E27E-4A63-B41F-825C35E6886F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68DEE72-E27E-4A63-B41F-825C35E6886F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68DEE72-E27E-4A63-B41F-825C35E6886F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68DEE72-E27E-4A63-B41F-825C35E6886F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22083F9-3018-4E30-8A1D-A4F9E7240AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22083F9-3018-4E30-8A1D-A4F9E7240AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22083F9-3018-4E30-8A1D-A4F9E7240AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22083F9-3018-4E30-8A1D-A4F9E7240AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DDF34F6-FFB2-430F-A0D1-DD5EA7A1FEDC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6864db07-c980-4b27-9be8-5981f670f4a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6049/OptimizationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OptimizationService.xsd" MetadataType="Schema" ID="a2bc928b-954f-4e28-b8b4-22bf70484321" SourceId="1" SourceUrl="http://localhost:6049/OptimizationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OptimizationService1.xsd" MetadataType="Schema" ID="73ac89e0-2d62-4fb9-943d-7af718301d1a" SourceId="1" SourceUrl="http://localhost:6049/OptimizationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="OptimizationService2.xsd" MetadataType="Schema" ID="76448c0c-56ca-4ff1-b376-246455bcabce" SourceId="1" SourceUrl="http://localhost:6049/OptimizationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OptimizationService.wsdl" MetadataType="Wsdl" ID="b2a20211-1734-4c54-b380-d598d2cf13ee" SourceId="1" SourceUrl="http://localhost:6049/OptimizationService.svc?wsdl" />
+    <MetadataFile FileName="OptimizationService.disco" MetadataType="Disco" ID="f3363ed0-da58-42d0-be87-b7ffbc85ac58" SourceId="1" SourceUrl="http://localhost:6049/OptimizationService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

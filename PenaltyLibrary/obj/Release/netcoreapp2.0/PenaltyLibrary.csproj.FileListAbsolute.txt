@@ -1,9 +1,0 @@
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\bin\Release\netcoreapp2.0\PenaltyLibrary.deps.json
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\bin\Release\netcoreapp2.0\PenaltyLibrary.dll
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\bin\Release\netcoreapp2.0\PenaltyLibrary.pdb
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.csprojResolveAssemblyReference.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.csproj.CoreCompileInputs.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.AssemblyInfoInputs.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.AssemblyInfo.cs
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.dll
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\PenaltyLibrary\obj\Release\netcoreapp2.0\PenaltyLibrary.pdb

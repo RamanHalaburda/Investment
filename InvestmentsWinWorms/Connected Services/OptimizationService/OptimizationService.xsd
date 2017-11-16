@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:6049/OptimizationService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="DoSimplex">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_sum" type="xs:double" />
+        <xs:element minOccurs="0" name="_ratio" type="xs:double" />
+        <xs:element minOccurs="0" name="_divA" type="xs:double" />
+        <xs:element minOccurs="0" name="_divB" type="xs:double" />
+        <xs:element minOccurs="0" name="_limA" type="xs:double" />
+        <xs:element minOccurs="0" name="_limB" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoSimplexResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DoSimplexResult" nillable="true" type="q1:ArrayOfdouble" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoBionic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="N" type="xs:int" />
+        <xs:element minOccurs="0" name="G" type="xs:int" />
+        <xs:element minOccurs="0" name="_sum" type="xs:double" />
+        <xs:element minOccurs="0" name="_ratio" type="xs:double" />
+        <xs:element minOccurs="0" name="_divA" type="xs:double" />
+        <xs:element minOccurs="0" name="_divB" type="xs:double" />
+        <xs:element minOccurs="0" name="_limA" type="xs:double" />
+        <xs:element minOccurs="0" name="_limB" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoBionicResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DoBionicResult" nillable="true" type="q2:ArrayOfdouble" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

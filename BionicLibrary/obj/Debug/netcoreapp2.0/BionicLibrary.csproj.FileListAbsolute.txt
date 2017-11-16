@@ -1,9 +1,0 @@
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\bin\Debug\netcoreapp2.0\BionicLibrary.deps.json
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\bin\Debug\netcoreapp2.0\BionicLibrary.dll
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\bin\Debug\netcoreapp2.0\BionicLibrary.pdb
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.csprojResolveAssemblyReference.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.csproj.CoreCompileInputs.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.AssemblyInfoInputs.cache
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.AssemblyInfo.cs
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.dll
-E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\Investments\BionicLibrary\obj\Debug\netcoreapp2.0\BionicLibrary.pdb
