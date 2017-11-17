@@ -28,7 +28,9 @@ namespace InvestmentsWinWorms
                         double.Parse(textBox2.Text),
                         double.Parse(textBox3.Text),
                         double.Parse(textBox5.Text),
-                        double.Parse(textBox6.Text));
+                        double.Parse(textBox6.Text), 
+                        int.Parse(textBox7.Text),
+                        int.Parse(textBox8.Text));
                 double[] res = null;
 
                 if (comboBox1.SelectedIndex == 0)
@@ -42,15 +44,14 @@ namespace InvestmentsWinWorms
                 }
                 else
                 {
-                    res = bionic.DoBionic(int.Parse(textBox7.Text),
-                        int.Parse(textBox8.Text));
+                    res = bionic.DoBionic();
                 }
 
                 label7.Text = res[0].ToString();
                 label8.Text = res[1].ToString();
                 label9.Text = res[2].ToString();
             }
-            catch (Exception) { }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -69,6 +70,313 @@ namespace InvestmentsWinWorms
         }
     }
 
+    public class RefElement
+    {
+        public double Sum { get; set; }
+        public double Ratio { get; set; }
+        public double DividentsA { get; set; }
+        public double DividentsB { get; set; }
+        public double LimitA { get; set; }
+        public double LimitB { get; set; }
+        public int DimensionPopulation { get; set; }
+        public int CountPopulation { get; set; }
+
+        public RefElement(double _sum, double _ratio, double _divA, double _divB, double _limA, double _limB, int _dP, int _cP)
+        {
+            this.Sum = _sum;
+            this.Ratio = _ratio;
+            this.DividentsA = _divA * 0.01;
+            this.DividentsB = _divB * 0.01;
+            this.LimitA = _limA;
+            this.LimitB = _limB;
+            this.DimensionPopulation = _dP;
+            this.CountPopulation = _cP;
+        }
+    }
+
+    public class Bionic
+    {
+        public double Sum { get; set; }
+        public double Ratio { get; set; }
+        public double DividentsA { get; set; }
+        public double DividentsB { get; set; }
+        public double LimitA { get; set; }
+        public double LimitB { get; set; }
+        public int DimensionPopulation { get; set; }
+        public int CountPopulation { get; set; }
+        public RefElement refElement { get; set; }
+
+        public Bionic(double _sum, double _ratio, double _divA, double _divB, double _limA, double _limB, int _dP, int _cP)
+        {
+            this.Sum = _sum;
+            this.Ratio = _ratio;
+            this.DividentsA = _divA * 0.01;
+            this.DividentsB = _divB * 0.01;
+            this.LimitA = _limA;
+            this.LimitB = _limB;
+            this.DimensionPopulation = _dP;
+            this.CountPopulation = _cP;
+            refElement = new RefElement(_sum, _ratio, _divA, _divB, _limA, _limB, _dP, _cP);
+        }
+
+        List<Element> points;
+        int size;
+
+        int bottomLimit = 0;
+
+        //List<int> res;
+        Element answer;
+        public double[] DoBionic()
+        {
+            bool generate_new_flag = false;
+            
+            size = DimensionPopulation;
+            List<Element> mas = new List<Element>(size);
+            points = new List<Element>(size * CountPopulation);
+            List<Element> buf = new List<Element>(size);
+            mas = generate(size);
+            for (int i = 0; i < CountPopulation; i++)
+            {
+                addPoints(mas);
+                if (buf.Count != 0)
+                {
+                    buf.Clear();
+                }
+                int kol = 0, flag = 0;
+                for (int j = 0; j < size; j++)
+                {
+                    if (mas[j].elite)
+                    {
+                        buf.Add(mas[j]);
+                        kol++;
+                    }
+                }
+                mas.Clear();
+                for (int j = 0; j < size; j++)
+                {
+                    double x1 = 0, x2 = 0;
+                    if (flag == kol - 1)
+                    {
+                        flag = 0;
+                        if (generate_new_flag)
+                        {
+                            generate_new_flag = false;
+                        }
+                        else
+                        {
+                            generate_new_flag = true;
+                        }
+                    }
+                    if (buf.Count != 0) // amd mow exception
+                    {
+                        if (generate_new_flag)
+                        {
+                            x2 = buf[flag].x2;
+                        }
+                        else
+                        {
+                            x1 = buf[flag].x1;
+                        }
+                    }
+                    flag++;
+                    if (flag == kol)
+                    {
+                        flag = 0;
+                        if (generate_new_flag)
+                        {
+                            x2 = buf[flag].x2;
+                        }
+                        else
+                        {
+                            x1 = buf[flag].x1;
+                        }
+
+                        if (generate_new_flag)
+                        {
+                            generate_new_flag = false;
+                        }
+                        else
+                        {
+                            generate_new_flag = true;
+                        }
+                    }
+                    else
+                    {
+                        // now exception
+                        if (generate_new_flag)
+                        {
+                            x1 = buf[flag].x1;
+                        }
+                        else
+                        {
+                            x2 = buf[flag].x2;
+                        }
+                    }
+                    mas.Add(genereteNewElement(x1, x2));
+                }
+            }
+            addPoints(mas);
+            //label5.Text = find_best(mas).y.ToString() + ";" + find_best(mas, func).x1.ToString() + ";" + find_best(mas, func).x2.ToString();
+            answer = find_best(mas);
+            //button2_Click(new object(), new EventArgs());
+
+            double[] Result = new double[] { answer.x1, answer.x2, answer.y };
+            return Result;
+        }
+        private Element find_best(List<Element> mass)
+        {
+            double res = 0;
+            Element result = new Element(0, 0, this.refElement);
+            String str = "";
+
+            res = 0;
+            /*
+            for (int i = 0; i < countPopulation; i++)
+            {
+                str += mass[i].y.ToString() + ";";
+                if (mass[i].y > rez)
+                {
+                    rez = mass[i].y;
+                    rezult = mass[i];
+                }
+            }
+            */
+            {
+                for (int i = 0; i < CountPopulation; i++)
+                {
+                    str += mass[i].y.ToString() + ";";
+                    if (mass[i].y > res)
+                    {
+                        res = mass[i].y;
+                        result = mass[i];
+                    }
+                }
+            }
+
+            //label2.Text = rez.ToString(); // number of population
+            return result;
+        }
+        private List<Element> generate(int size)
+        {
+            List<Element> mas = new List<Element>(size);
+            Random rand = new Random();
+
+            for (int i = 0; i < size; i++)
+            {
+                Element elem = new Element((double)rand.Next(bottomLimit * 100, (int)LimitA * 100) / 100, (double)rand.Next(bottomLimit * 100, (int)LimitB * 100) / 100, this.refElement);
+                mas.Add(elem);
+            }
+
+            return mas;
+        }
+        private Element genereteNewElement(double x1, double x2)
+        {
+            Random rand = new Random();
+            if (rand.Next(0, (int)Sum) == 1)
+            {
+                x1 = x1 * 1.2;
+                x2 = x2 * 0.8;
+            }
+            return new Element(x1, x2, this.refElement);
+        }
+        private void addPoints(List<Element> mass)
+        {
+            for (int i = 0; i < mass.Count; i++)
+            {
+                points.Add(mass[i]);
+            }
+        }
+        //private void addToChart(element el)
+        //{
+        //    chart1.Series["Точки"].Points.AddXY(el.x1, el.x2);
+        //    chart1.Series["Значение"].Points.AddXY(el.y, el.y);
+        //}
+
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    chart1.Series["Точки"].Points.Clear();
+        //    chart1.Series["Значение"].Points.Clear();
+        //    flag++;
+        //    if (flag == 1)
+        //        button3.Enabled = true;
+
+        //    if (flag == size)
+        //        button2.Enabled = false;
+        //    for (int i = (flag - 1) * size; i < flag * size; i++)
+        //    {
+        //        addToChart(points[i]);
+        //    }
+
+        //    label2.Text = flag.ToString();
+        //}
+
+        //private void button3_Click(object sender, EventArgs e)
+        //{
+        //    chart1.Series["Точки"].Points.Clear();
+        //    chart1.Series["Значение"].Points.Clear();
+        //    flag--;
+        //    if (flag == 0)
+        //        button3.Enabled = false;
+        //    if (flag == size - 1)
+        //        button2.Enabled = true;
+        //    for (int i = (flag) * size; i < flag * size + size; i++)
+        //    {
+        //        addToChart(points[i]);
+        //    }
+
+        //    label2.Text = flag.ToString();
+        //}
+    }
+
+    public class Element
+    {
+        public double x1 { get; set; }
+        public double x2 { get; set; }
+        public double y { get; set; }
+        public bool elite { get; set; }
+        public RefElement RE { get; set; }
+
+        public Element(double x1, double x2, RefElement _RE)
+        {
+            this.x1 = x1;
+            this.x2 = x2;
+            this.RE = _RE;
+            //this.func = func;
+            this.elite = if_elite();
+            this.ObjectiveFunction();
+        }
+
+        private void ObjectiveFunction()
+        {
+            this.y = (double)(this.RE.DividentsA * x1 + this.RE.DividentsB * x2);
+        }
+
+        private bool if_elite()
+        {
+            bool result = true;
+
+            if ((this.x1 + this.RE.Ratio * this.x2) <= 0)
+            {
+                result = false;
+            }
+            if (this.x1 <= 0 || this.x1 > this.RE.LimitA)
+            {
+                result = false;
+            }
+            if (this.x2 <= 0 || this.x2 > this.RE.LimitB)
+            {
+                result = false;
+            }
+            if ((this.x1 + this.x2 < this.RE.Sum - 100) || this.x1 + this.x2 > this.RE.Sum + 100)
+            {
+                result = false;
+            }
+
+            return result;
+        }
+    }
+
+    /*
     public class Bionic
     {
         public double Sum { get; set; }
@@ -224,4 +532,7 @@ namespace InvestmentsWinWorms
             return true;
         }
     }
+    */
+
+
 }

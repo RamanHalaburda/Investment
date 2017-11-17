@@ -8,3 +8,13 @@ E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsW
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWinWorms\bin\Debug\InvestmentsWinWorms.pdb
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.exe
 E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\InvestmentsWCF\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.Form1.resources
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.Properties.Resources.resources
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.csproj.GenerateResource.Cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.csproj.CoreCompileInputs.cache
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.exe
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\obj\Debug\InvestmentsWinWorms.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\bin\Debug\InvestmentsWinWorms.exe.config
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\bin\Debug\InvestmentsWinWorms.exe
+E:\study\1_Study\BarsuEngineeringFaculty\ProjMVS2017\WCFInvestmentsOptimization\InvestmentsWinWorms\bin\Debug\InvestmentsWinWorms.pdb
